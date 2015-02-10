@@ -13,20 +13,15 @@ folders:
       to: /opt/alvin
     - map: ~/code/apps/alvin/system
       to: /opt/system
-    - map: ~/code/apps
+    - map: ~/code/apps/alvin
       to: /code
-  	- map: ~/code/apps/arc/
-  	  to: /opt/arc
 
 sites:
     - map: alvin.app
       to: /opt/alvin/public
-    - map: arc.app
-      to: /opt/arc/application/public
 
 databases:
-    - alvin
-    - arc
+    - homestead
 
 variables:
     - key: APP_ENV
