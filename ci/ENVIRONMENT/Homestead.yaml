@@ -9,19 +9,23 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: ~/code/apps/alvin/application
-      to: /opt/alvin
-    - map: ~/code/apps/alvin/system
-      to: /opt/system
-    - map: ~/code/apps/alvin
+    - map: ~/code/apps
       to: /code
+    - map: ~/code/apps/alvin
+      to: /opt/alvin
+    - map: ~/code/apps/arc
+      to: /opt/arc
+
 
 sites:
     - map: alvin.app
       to: /opt/alvin/public
+    - map: alvin.app
+      to: /opt/alvin/public
 
 databases:
-    - homestead
+    - alvin
+    - arc
 
 variables:
     - key: APP_ENV
